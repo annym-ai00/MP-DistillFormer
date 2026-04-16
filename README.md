@@ -1,4 +1,13 @@
-# **MP-DistillFormer: Multimodal Prototype Distillation with Self-Supervised Transformer for Few-Shot Fine-Grained Classification**
+## **MP-DistillFormer: Multimodal Prototype Distillation with Self-Supervised Transformer for Few-Shot Fine-Grained Classification**
+
+# Data Preparation
+Since the datasets are public, please download the raw images from their official websites:
+- CUB-200-2011: https://www.vision.caltech.edu/datasets/cub_200_2011/
+- Stanford Dogs: http://vision.stanford.edu/aditya86/ImageNetDogs/
+- Stanford Cars: http://ai.stanford.edu/~jkrause/cars/car_dataset.html
+
+To ensure exact reproducibility of our few-shot episodes, 
+we have provided the data split files (`train.txt`, `valid.txt`, and `test.txt`) in the `./dataset/` directory.
 
 # Dataset Structure:
 dataset/
