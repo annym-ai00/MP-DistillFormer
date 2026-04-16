@@ -10,14 +10,14 @@ dataset/
 	- test/
 
 - Stanford_Dogs/
-	|- train/
-	|- valid/
-	|- test/
+  	- train/
+	- valid/
+	- test/
 
 - Stanford_Cars/
-	|- train/
-	|- valid/
-	|- test/
+  	- train/
+	- valid/
+	- test/
 
 
 # How to Run:
