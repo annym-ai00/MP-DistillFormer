@@ -5,17 +5,15 @@ MP-DistillFormer: Multimodal Prototype Distillation with Self-Supervised Transfo
 dataset/
 
 |- CUB_200_2011/
-
 |	|- train/
-
 |	|- valid/
-
 |	|- test/
 
 |- Stanford_Dogs/
 |	|- train/
 |	|- valid/
 |	|- test/
+
 |- Stanford_Cars/
 |	|- train/
 |	|- valid/
