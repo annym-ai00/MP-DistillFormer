@@ -36,5 +36,3 @@ dataset/
 
 4. Test Final Model:
 > python test.py --dataset dog --save-path ./stage3
-
-
