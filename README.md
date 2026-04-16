@@ -1,4 +1,3 @@
-[ReadMe.txt](https://github.com/user-attachments/files/26774582/ReadMe.txt)
 MP-DistillFormer: Multimodal Prototype Distillation with Self-Supervised Transformer for Few-Shot Fine-Grained Classification
 
 # Dataset Structure:
