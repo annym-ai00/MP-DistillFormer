@@ -4,7 +4,7 @@ from PIL import Image
 from torch.utils.data import Dataset
 from torchvision import transforms
 
-ROOT_PATH = './dataset'
+ROOT_PATH = './data'
 
 class DatasetLoader(Dataset):
     def __init__(self, dataset_name='cub', phase='train', size=84, transform=None, root_dir=ROOT_PATH):
