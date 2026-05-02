@@ -1,5 +1,10 @@
 # **MP-DistillFormer: Multimodal Prototype Distillation with Self-Supervised Transformer for Few-Shot Fine-Grained Classification**
 
+## Environment
+The code is tested on Windows 10 with Anaconda3 and following packages:
+- python 3.11.5
+- pytorch 2.4.0
+
 ## Data Preparation
 Since the datasets are public, please download the raw images from their official websites:
 - CUB-200-2011: https://www.vision.caltech.edu/datasets/cub_200_2011/
