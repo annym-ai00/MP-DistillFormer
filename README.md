@@ -5,7 +5,7 @@ The code is tested on Windows 11 with Anaconda3 and following packages:
 - python 3.11.5
 - pytorch 2.4.0
 
-## Data Preparation
+## Preparation
 Since the datasets are public, please download the raw images from their official websites:
 - CUB-200-2011: https://www.vision.caltech.edu/datasets/cub_200_2011/
 - Stanford Dogs: http://vision.stanford.edu/aditya86/ImageNetDogs/
@@ -20,18 +20,11 @@ we have provided the data split files (`train.txt`, `valid.txt`, and `test.txt`)
 ## Experiments:
 To train on Stanford Dogs:
 
-1. Train Stage 1:
 ```
 python train_stage1.py --dataset dog --save-path ./save/stage1
-```
 
-2. Train Stage 2:
-```
 python train_stage2.py --dataset dog --stage1-path ./stage1 --save-path ./save/stage2
-```
 
-4. Train Stage 3:
-```
 python train_stage3.py --dataset dog --stage2-path ./stage2 --save-path ./save/stage3
 ```
 
