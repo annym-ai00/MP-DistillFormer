@@ -14,9 +14,9 @@ The code is tested on Windows 11 with Anaconda3 and following packages:
 2. Download the datasets and put them into corresponding folders that mentioned in the ROOT_PATH:<br/>
     - **CUB-200-2011**: download from [here](https://www.vision.caltech.edu/datasets/cub_200_2011/) and put in `data/cub` folder.
 
-    - **Stanford Dogs**: download from [here]([http://vision.stanford.edu/aditya86/ImageNetDogs/](https://github.com/ayushdabra/stanford-dogs-dataset-classification)) and put in `data/dog` folder.
+    - **Stanford Dogs**: download from [here](https://github.com/ayushdabra/stanford-dogs-dataset-classification) and put in `data/dog` folder.
 
-    - **Stanford Cars**: download from [here]([http://ai.stanford.edu/~jkrause/cars/car_dataset.html](https://github.com/cyizhuo/Stanford_Cars_dataset)) and put in `data/car` folder.
+    - **Stanford Cars**: download from [here](https://github.com/cyizhuo/Stanford_Cars_dataset) and put in `data/car` folder.
 
 ## Pre-trained Models
 [Optional] The pre-trained models can be downloaded from [here](https://drive.google.com/drive/folders/1E1vj3dUH8Ilpn3LWNIQT1_hPxQkJDIR5). Extract and put the content in the `save` folder. To evaluate the model, run the `test.py` file with the proper save path as in the next section.
