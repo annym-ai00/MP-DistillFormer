@@ -1,7 +1,7 @@
 # **MP-DistillFormer: Multimodal Prototype Distillation with Self-Supervised Transformer for Few-Shot Fine-Grained Classification**
 
 ## Environment
-The code is tested on Windows 10 with Anaconda3 and following packages:
+The code is tested on Windows 11 with Anaconda3 and following packages:
 - python 3.11.5
 - pytorch 2.4.0
 
