@@ -12,9 +12,9 @@ The code is tested on Windows 11 with Anaconda3 and following packages:
     - `datasets/car.py`
 
 2. Download the datasets and put them into corresponding folders that mentioned in the ROOT_PATH:<br/>
-    - ***CUB-200-2011**: download from [Caltech Vision Lab](https://www.vision.caltech.edu/datasets/cub_200_2011/) and put in `data/cub` folder.
+    - **CUB-200-2011**: download from [Caltech Vision Lab](https://www.vision.caltech.edu/datasets/cub_200_2011/) and put in `data/cub` folder.
 
-    - ***Stanford Dogs**: download from [Stanford Artificial Intelligence](http://vision.stanford.edu/aditya86/ImageNetDogs/) and put in `data/dog` folder.
+    - **Stanford Dogs**: download from [Stanford Artificial Intelligence](http://vision.stanford.edu/aditya86/ImageNetDogs/) and put in `data/dog` folder.
 
     - **Stanford Cars**: download from [Stanford Education](http://ai.stanford.edu/~jkrause/cars/car_dataset.html) and put in `data/car` folder.
 
