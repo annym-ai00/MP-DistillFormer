@@ -18,17 +18,21 @@ we have provided the data split files (`train.txt`, `valid.txt`, and `test.txt`)
 [Optional] The pre-trained models can be downloaded from [here](https://drive.google.com/drive/folders/1E1vj3dUH8Ilpn3LWNIQT1_hPxQkJDIR5). Extract and put the content in the `save` folder. To evaluate the model, run the `test.py` file with the proper save path as in the next section.
 
 ## Experiments:
-To train on Stanford Dogs:
+To train on 5-way 1-shot and 5-way 5-shot Stanford Dogs:
 
 ```
-python train_stage1.py --dataset dog --save-path ./save/stage1
+python train_stage1.py --dataset dog --save-path ./save/stage1 --shot 1
+python train_stage1.py --dataset dog --save-path ./save/stage1 --shot 5
 
-python train_stage2.py --dataset dog --stage1-path ./stage1 --save-path ./save/stage2
+python train_stage2.py --dataset dog --stage1-path ./stage1 --save-path ./save/stage2 --shot 1
+python train_stage2.py --dataset dog --stage1-path ./stage1 --save-path ./save/stage2 --shot 5
 
-python train_stage3.py --dataset dog --stage2-path ./stage2 --save-path ./save/stage3
+python train_stage3.py --dataset dog --stage2-path ./stage2 --save-path ./save/stage3 --shot 1
+python train_stage3.py --dataset dog --stage2-path ./stage2 --save-path ./save/stage3 --shot 5
 ```
 
-To evaluate on Stanford Dogs:
+To evaluate on 5-way 1-shot and 5-way 5-shot Stanford Dogs:
 ```
-python test.py --dataset dog --save-path ./save/stage3
+python test.py --dataset dog --save-path ./save/stage3 --shot 1
+python test.py --dataset dog --save-path ./save/stage3 --shot 5
 ```
