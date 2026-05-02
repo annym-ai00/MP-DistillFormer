@@ -29,18 +29,28 @@ dataset/
 	- valid/
 	- test/
 
-## How to Run:
+## Experiments:
+To train on Stanford Dogs:
+
 1. Train Stage 1:
-> python train_stage1.py --dataset dog --save-path ./stage1
+```
+python train_stage1.py --dataset dog --save-path ./stage1
+```
 
 2. Train Stage 2:
-> python train_stage2.py --dataset dog --stage1-path ./stage1 --save-path ./stage2
+```
+python train_stage2.py --dataset dog --stage1-path ./stage1 --save-path ./stage2
+```
 
-3. Train Stage 3:
-> python train_stage3.py --dataset dog --stage2-path ./stage2 --save-path ./stage3
+4. Train Stage 3:
+```
+python train_stage3.py --dataset dog --stage2-path ./stage2 --save-path ./stage3
+```
 
-4. Test Final Model:
-> python test.py --dataset dog --save-path ./stage3
+To evaluate on Stanford Dogs:
+```
+python test.py --dataset dog --save-path ./stage3
+```
 
 Pretrained checkpoints are available at:
 Google Drive: https://drive.google.com/drive/folders/1E1vj3dUH8Ilpn3LWNIQT1_hPxQkJDIR5
