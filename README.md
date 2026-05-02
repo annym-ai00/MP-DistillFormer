@@ -18,11 +18,7 @@ The code is tested on Windows 11 with Anaconda3 and following packages:
 
 ## Textual Embeddings
 
-Textual descriptions used in this work can be generated using:
-
-```
-python textual_desc.py
-```
+Textual descriptions used in this work can be generated using: `python textual_desc.py`
 
 ## Pre-trained Models
 [Optional] The pre-trained models can be downloaded from [here](https://drive.google.com/drive/folders/1E1vj3dUH8Ilpn3LWNIQT1_hPxQkJDIR5). Extract and put the content in the `save` folder. To evaluate the model, run the `test.py` file with the proper save path as in the next section.
