@@ -33,6 +33,6 @@ python train_stage3.py --dataset dog --stage2-path ./stage2 --save-path ./save/s
 
 To evaluate on 5-way 1-shot and 5-way 5-shot Stanford Dogs:
 ```
-python test.py --dataset dog --save-path ./save/stage3 --shot 1
-python test.py --dataset dog --save-path ./save/stage3 --shot 5
+python test.py --dataset dog --shot 1 --save-path ./save/stage3
+python test.py --dataset dog --shot 5 --save-path ./save/stage3
 ```
