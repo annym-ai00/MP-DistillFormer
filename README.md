@@ -28,6 +28,9 @@ dataset/
   	- train/
 	- valid/
 	- test/
+ 
+## Pre-trained Models
+[Optional] The pre-trained models can be downloaded from [here](https://drive.google.com/drive/folders/1E1vj3dUH8Ilpn3LWNIQT1_hPxQkJDIR5). Extract and put the content in the `save` folder. To evaluate the model, run the `test.py` file with the proper save path as in the next section.
 
 ## Experiments:
 To train on Stanford Dogs:
@@ -51,6 +54,3 @@ To evaluate on Stanford Dogs:
 ```
 python test.py --dataset dog --save-path ./stage3
 ```
-
-Pretrained checkpoints are available at:
-Google Drive: https://drive.google.com/drive/folders/1E1vj3dUH8Ilpn3LWNIQT1_hPxQkJDIR5
