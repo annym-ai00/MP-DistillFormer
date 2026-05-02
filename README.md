@@ -6,6 +6,21 @@ The code is tested on Windows 11 with Anaconda3 and following packages:
 - pytorch 2.4.0
 
 ## Preparation
+1. Change the ROOT_PATH value in the following files to yours:
+    - `datasets/miniimagenet.py`
+    - `datasets/tiered_imagenet.py`
+    - `datasets/cifarfs.py`
+    - `datasets/fc100.py`
+
+2. Download the datasets and put them into corresponding folders that mentioned in the ROOT_PATH:<br/>
+    - ***CUB-200-2011**: download from [Caltech Vision Lab](https://www.vision.caltech.edu/datasets/cub_200_2011/) and put in `data/miniImageNet` folder.
+
+    - ***Stanford Dogs**: download from [Stanford Artificial Intelligence](http://vision.stanford.edu/aditya86/ImageNetDogs/) and put in `data/tieredImageNet` folder.
+
+    - **Stanford Cars**: download from [Stanford Education](http://ai.stanford.edu/~jkrause/cars/car_dataset.html) and put in `data/cifarfs` folder.
+
+  
+   
 Since the datasets are public, please download the raw images from their official websites:
 - CUB-200-2011: https://www.vision.caltech.edu/datasets/cub_200_2011/
 - Stanford Dogs: http://vision.stanford.edu/aditya86/ImageNetDogs/
