@@ -37,4 +37,5 @@ dataset/
 4. Test Final Model:
 > python test.py --dataset dog --save-path ./stage3
 
-### Pretrained checkpoints are available at:
+Pretrained checkpoints are available at:
+Google Drive: https://drive.google.com/drive/folders/1E1vj3dUH8Ilpn3LWNIQT1_hPxQkJDIR5
