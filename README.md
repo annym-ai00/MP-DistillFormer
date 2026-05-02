@@ -37,20 +37,20 @@ To train on Stanford Dogs:
 
 1. Train Stage 1:
 ```
-python train_stage1.py --dataset dog --save-path ./stage1
+python train_stage1.py --dataset dog --save-path ./save/stage1
 ```
 
 2. Train Stage 2:
 ```
-python train_stage2.py --dataset dog --stage1-path ./stage1 --save-path ./stage2
+python train_stage2.py --dataset dog --stage1-path ./stage1 --save-path ./save/stage2
 ```
 
 4. Train Stage 3:
 ```
-python train_stage3.py --dataset dog --stage2-path ./stage2 --save-path ./stage3
+python train_stage3.py --dataset dog --stage2-path ./stage2 --save-path ./save/stage3
 ```
 
 To evaluate on Stanford Dogs:
 ```
-python test.py --dataset dog --save-path ./stage3
+python test.py --dataset dog --save-path ./save/stage3
 ```
