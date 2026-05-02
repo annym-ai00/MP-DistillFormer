@@ -7,28 +7,17 @@ The code is tested on Windows 11 with Anaconda3 and following packages:
 
 ## Preparation
 1. Change the ROOT_PATH value in the following files to yours:
-    - `datasets/miniimagenet.py`
-    - `datasets/tiered_imagenet.py`
-    - `datasets/cifarfs.py`
-    - `datasets/fc100.py`
+    - `datasets/cub.py`
+    - `datasets/dog.py`
+    - `datasets/car.py`
 
 2. Download the datasets and put them into corresponding folders that mentioned in the ROOT_PATH:<br/>
-    - ***CUB-200-2011**: download from [Caltech Vision Lab](https://www.vision.caltech.edu/datasets/cub_200_2011/) and put in `data/miniImageNet` folder.
+    - ***CUB-200-2011**: download from [Caltech Vision Lab](https://www.vision.caltech.edu/datasets/cub_200_2011/) and put in `data/cub` folder.
 
-    - ***Stanford Dogs**: download from [Stanford Artificial Intelligence](http://vision.stanford.edu/aditya86/ImageNetDogs/) and put in `data/tieredImageNet` folder.
+    - ***Stanford Dogs**: download from [Stanford Artificial Intelligence](http://vision.stanford.edu/aditya86/ImageNetDogs/) and put in `data/dog` folder.
 
-    - **Stanford Cars**: download from [Stanford Education](http://ai.stanford.edu/~jkrause/cars/car_dataset.html) and put in `data/cifarfs` folder.
+    - **Stanford Cars**: download from [Stanford Education](http://ai.stanford.edu/~jkrause/cars/car_dataset.html) and put in `data/car` folder.
 
-  
-   
-Since the datasets are public, please download the raw images from their official websites:
-- CUB-200-2011: https://www.vision.caltech.edu/datasets/cub_200_2011/
-- Stanford Dogs: http://vision.stanford.edu/aditya86/ImageNetDogs/
-- Stanford Cars: http://ai.stanford.edu/~jkrause/cars/car_dataset.html
-
-To ensure exact reproducibility of our few-shot episodes, 
-we have provided the data split files (`train.txt`, `valid.txt`, and `test.txt`) in the `./dataset/` directory.
- 
 ## Pre-trained Models
 [Optional] The pre-trained models can be downloaded from [here](https://drive.google.com/drive/folders/1E1vj3dUH8Ilpn3LWNIQT1_hPxQkJDIR5). Extract and put the content in the `save` folder. To evaluate the model, run the `test.py` file with the proper save path as in the next section.
 
