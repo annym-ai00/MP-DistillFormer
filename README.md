@@ -13,21 +13,6 @@ Since the datasets are public, please download the raw images from their officia
 
 To ensure exact reproducibility of our few-shot episodes, 
 we have provided the data split files (`train.txt`, `valid.txt`, and `test.txt`) in the `./dataset/` directory.
-
-## Dataset Structure:
-dataset/
-- CUB_200_2011/
-	- train/
-  	- valid/
-	- test/
-- Stanford_Dogs/
-  	- train/
-	- valid/
-	- test/
-- Stanford_Cars/
-  	- train/
-	- valid/
-	- test/
  
 ## Pre-trained Models
 [Optional] The pre-trained models can be downloaded from [here](https://drive.google.com/drive/folders/1E1vj3dUH8Ilpn3LWNIQT1_hPxQkJDIR5). Extract and put the content in the `save` folder. To evaluate the model, run the `test.py` file with the proper save path as in the next section.
