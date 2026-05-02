@@ -5,6 +5,11 @@ The code is tested on Windows 11 with Anaconda3 and following packages:
 - python 3.11.5
 - pytorch 2.4.0
 
+Install the required dependencies:
+```
+pip install -r requirements.txt
+```
+
 ## Preparation
 1. Change the ROOT_PATH value in the following file to yours:
     - `datasets/datasets.py`
