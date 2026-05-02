@@ -6,10 +6,8 @@ The code is tested on Windows 11 with Anaconda3 and following packages:
 - pytorch 2.4.0
 
 ## Preparation
-1. Change the ROOT_PATH value in the following files to yours:
-    - `datasets/cub.py`
-    - `datasets/dog.py`
-    - `datasets/car.py`
+1. Change the ROOT_PATH value in the following file to yours:
+    - `datasets/datasets.py`
 
 2. Download the datasets and put them into corresponding folders that mentioned in the ROOT_PATH:<br/>
     - **CUB-200-2011**: download from [here](https://www.vision.caltech.edu/datasets/cub_200_2011/) and put in `data/cub` folder.
