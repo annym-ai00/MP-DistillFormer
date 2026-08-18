@@ -34,7 +34,6 @@ def get_dataset(args):
         
     trainset = DatasetLoader(dataset_name=args.dataset, phase='train', size=args.image_size)
     valset = DatasetLoader(dataset_name=args.dataset, phase='valid', size=args.image_size)
-    testset = DatasetLoader(dataset_name=args.dataset, phase='test', size=args.image_size)
     
     train_sampler = CategoriesSampler(trainset.label, args.train_batch,
                                         args.train_way, args.shot + args.train_query)
@@ -45,20 +44,15 @@ def get_dataset(args):
                                     args.train_way, args.shot + args.train_query)
     val_loader = DataLoader(dataset=valset, batch_sampler=val_sampler,
                             num_workers=0, pin_memory=True)
-    
-    test_sampler = CategoriesSampler(testset.label, args.test_batch,
-                                    args.test_way, args.shot + args.test_query)
-    test_loader = DataLoader(dataset=testset, batch_sampler=test_sampler,
-                            num_workers=0, pin_memory=True)
 
-    train_labels, valid_labels, test_labels = get_class_labels_from_split(dataset_name=args.dataset)
+    train_labels, valid_labels = get_class_labels_from_split(dataset_name=args.dataset)
     
-    return train_loader, val_loader, test_loader, n_cls, train_labels, valid_labels, test_labels
+    return train_loader, val_loader, n_cls, train_labels, valid_labels
 
 def main(args):
     ensure_path(args.save_path)
 
-    train_loader, val_loader, test_loader, n_cls, train_labels, valid_labels, test_labels = get_dataset(args)
+    train_loader, val_loader, n_cls, train_labels, valid_labels = get_dataset(args)
    
     teacher = resnet12(avg_pool=True, drop_rate=0.1, dropblock_size=5, num_classes=n_cls).cuda()
     checkpoint_file = os.path.join(args.stage1_path, 'max-acc.pth')
