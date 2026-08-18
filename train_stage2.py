@@ -130,8 +130,6 @@ def main(args):
         # checkpoint saving
         save_checkpoint({
             'start_epoch': epoch,
-            'best_test_acc': trlog['maxtestacc'],
-            'best_test_epoch': trlog['maxtestepoch'],
             'best_acc': trlog['max_acc'],
             'best_epoch': trlog['max_epoch'],
             'model': model.state_dict(),
