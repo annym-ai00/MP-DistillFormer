@@ -38,17 +38,12 @@ def get_dataset(args):
     val_loader = DataLoader(dataset=valset, batch_sampler=val_sampler,
                             num_workers=0, pin_memory=True)
     
-    test_sampler = CategoriesSampler(testset.label, args.test_batch,
-                                    args.test_way, args.shot + args.test_query)
-    test_loader = DataLoader(dataset=testset, batch_sampler=test_sampler,
-                            num_workers=0, pin_memory=True)
-    
-    return train_loader, val_loader, test_loader, n_cls
+    return train_loader, val_loader, n_cls
 
 def main(args):
     ensure_path(args.save_path)
 
-    train_loader, val_loader, test_loader, n_cls = get_dataset(args)
+    train_loader, val_loader, n_cls = get_dataset(args)
    
     model = TeSMo_KAN(num_classes=n_cls).cuda()
     checkpoint_file = os.path.join(args.stage1_path, 'max-acc.pth')
