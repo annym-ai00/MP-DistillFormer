@@ -9,8 +9,8 @@ def get_class_labels_from_split(dataset_name="cub", root_dir='./dataset'):
         name = "Stanford_Cars"
     
     split_folder = os.path.join(root_dir, name)
-    splits = ['train', 'valid', 'test']
-    train_labels, valid_labels, test_labels = [], [], []
+    splits = ['train', 'valid']
+    train_labels, valid_labels = [], []
 
     for split in splits:
         split_path = os.path.join(split_folder, split)
@@ -36,7 +36,5 @@ def get_class_labels_from_split(dataset_name="cub", root_dir='./dataset'):
                     train_labels.append(label)
                 elif split == "valid":
                     valid_labels.append(label)
-                elif split == "test":
-                    test_labels.append(label)
 
-    return train_labels, valid_labels, test_labels
+    return train_labels, valid_labels
