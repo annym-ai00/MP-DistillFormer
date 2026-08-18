@@ -14,11 +14,11 @@ class DatasetLoader(Dataset):
         """
         
         if dataset_name == 'cub':
-            name = "CUB_200_2011"
+            name = "CUB_200_2011/Split"
         elif dataset_name == 'dog':
-            name = "Stanford_Dogs"
+            name = "Stanford_Dogs/Split"
         elif dataset_name == 'car':
-            name = "Stanford_Cars"
+            name = "Stanford_Cars/Split"
             
         data_folder = os.path.join(root_dir, name)
         image_folder = os.path.join(data_folder, phase)
