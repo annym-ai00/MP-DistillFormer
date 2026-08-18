@@ -191,7 +191,7 @@ def train(args, model, train_loader, optimizer, teacher, kd_loss, n_cls, class_l
         proto_image_features = proto_image_features / proto_image_features.norm(dim=-1, keepdim=True)
         text_features = text_features / text_features.norm(dim=-1, keepdim=True)
 
-        proto = ((1-args.delta) * proto_image_features) + (args.delta * text_features[:args.test_way, :])
+        proto = ((1-args.delta) * proto_image_features) + (args.delta * text_features[:args.train_way, :])
         query = query_image_features
         
         logits = euclidean_metric(query, proto)
