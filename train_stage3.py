@@ -26,7 +26,6 @@ def get_dataset(args):
         
     trainset = DatasetLoader(dataset_name=args.dataset, phase='train', size=args.image_size)
     valset = DatasetLoader(dataset_name=args.dataset, phase='valid', size=args.image_size)
-    testset = DatasetLoader(dataset_name=args.dataset, phase='test', size=args.image_size)
     
     train_sampler = CategoriesSampler(trainset.label, args.train_batch,
                                         args.train_way, args.shot + args.train_query)
