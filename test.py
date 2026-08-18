@@ -11,8 +11,6 @@ from datasets.samplers import CategoriesSampler
 from utils import seed_torch, set_gpu, ensure_path, Averager, count_acc, euclidean_metric, Timer, compute_confidence_interval
 
 def main(args):
-    ensure_path(args.save_path)
-
     if args.dataset == 'cub':
         n_cls = 200
         print("=> CUB_200_2011...")
